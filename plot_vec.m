@@ -254,7 +254,7 @@ else
   Idx_top = 1:N;
 end
 
-font_size = min(75/(N - 25) + 10, 16); %Expected number of elements = 25; between font sizes 11 and 16
+font_size = min(75/abs(N - 25) + 10, 16); %Expected number of elements = 25; between font sizes 11 and 16
 
 for ii = 1:length(Idx_top)
   if vec(Idx_top(ii)) > 0
